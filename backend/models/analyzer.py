@@ -25,12 +25,11 @@ def analyzeImage(image):
     if img is None:
         results["error"] = f"File not found at {image}"
         return results
-
+    
     target_h = 800
     h, w = img.shape[:2]
     scale = target_h / h
     img = cv2.resize(img, (int(w * scale), target_h))
-    
     h, w = img.shape[:2]
     img_rgb = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
     
