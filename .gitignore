@@ -3,4 +3,10 @@
 
 .env
 .DS_Store
+data/uploads/*.png
+data/uploads/*.jpg
+data/uploads/*.jpeg
+data/processed/*.png
+data/processed/*.jpg
+data/processed/*.jpeg
 __pycache__/
